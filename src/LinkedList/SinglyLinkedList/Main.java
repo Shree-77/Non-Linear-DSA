@@ -4,12 +4,12 @@ public class Main {
     public static void main(String[] args) {
         Linkedlist linkedlist = new Linkedlist();
 
-        linkedlist.insertFirst(12);
-        linkedlist.insertFirst(32);
-        linkedlist.insertFirst(52);
-        linkedlist.insertFirst(34);
-        linkedlist.insert(7,2);
+        linkedlist.insertFirst(20);
+        linkedlist.insertFirst(230);
+        linkedlist.insertFirst(40);
+        linkedlist.insertFirst(580);
+        linkedlist.DeleteFirst();
+        linkedlist.DeleteLast();
         linkedlist.printList();
-
     }
 }

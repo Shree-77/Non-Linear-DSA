@@ -65,8 +65,41 @@ public class Linkedlist {
         temp.next=node;
 
         size++;
+    }
+
+    public void DeleteFirst(){
+        if(head==null){
+            return;
+        }
+        if(head==tail){
+            head=null;
+            tail=null;
+            return;
+        }
+        Node current = head;
+        head=current.next;
+    }
+    public void DeleteLast(){
+        if(head == null){
+            return;
+        }
+        if(head == tail){
+            head = null;
+            tail = null;
+        } else {
+            Node current = head;
+            Node previous = null;
+            while(current.next!=null){
+                previous=current;
+                current=current.next;
+            }
+            tail=previous;
+            tail.next=null;
+        }
+        size--;
 
     }
+
 
     public void printList(){
         Node temp = head;
