@@ -97,8 +97,24 @@ public class Linkedlist {
             tail.next=null;
         }
         size--;
-
     }
+
+    public void delete(int index){
+        if(index==0) {DeleteFirst(); return;}
+        if(index==size){DeleteLast();return;}
+        Node current = head;
+        Node previous = null;
+        int count=index;
+
+        while(count>0){
+            previous=current;
+            current=current.next;
+            count--;
+        }
+        previous.next=current.next;
+        size--;
+    }
+
 
 
     public void printList(){

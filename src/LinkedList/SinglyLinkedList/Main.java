@@ -8,8 +8,7 @@ public class Main {
         linkedlist.insertFirst(230);
         linkedlist.insertFirst(40);
         linkedlist.insertFirst(580);
-        linkedlist.DeleteFirst();
-        linkedlist.DeleteLast();
+        linkedlist.delete(1);
         linkedlist.printList();
     }
 }
